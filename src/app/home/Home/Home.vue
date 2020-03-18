@@ -1,119 +1,120 @@
 <template>
-  <div>
-    <stage :disable-particles="disableParticles" />
-    <home-section image="/static/index/entertainment.jpg" flip>
-      <vue-headline level="2">一键接商演</vue-headline>
-      <br />
-      <vue-headline level="3">市民消费级</vue-headline>
-      <p>
-        婚庆,活动,展台,开业
-      </p>
-      <br />
-      <vue-headline level="3">千万舞台任君选</vue-headline>
-      <p>
-        不同舞台铸就非凡人生传奇
-      </p>
-      <br />
-      <vue-headline level="3">经济可行</vue-headline>
-      <p>
-        及时接单，早期规划，效果出奇
-      </p>
-    </home-section>
+  <div class="player-container">
+    <div class="inner-content"/>
+    <!--<stage :disable-particles="disableParticles" />-->
+    <!--<home-section image="/static/index/entertainment.jpg" flip>-->
+      <!--<vue-headline level="2">一键接商演</vue-headline>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">市民消费级</vue-headline>-->
+      <!--<p>-->
+        <!--婚庆,活动,展台,开业-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">千万舞台任君选</vue-headline>-->
+      <!--<p>-->
+        <!--不同舞台铸就非凡人生传奇-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">经济可行</vue-headline>-->
+      <!--<p>-->
+        <!--及时接单，早期规划，效果出奇-->
+      <!--</p>-->
+    <!--</home-section>-->
 
-    <home-section image="/static/index/findplayer.jpg" alternative>
-      <vue-headline level="2">一键找乐手</vue-headline>
-      <br />
-      <vue-headline level="3">学习支撑</vue-headline>
-      <p>
-        在线学习,线下切磋
-      </p>
-      <br />
-      <vue-headline level="3">所见即所得</vue-headline>
-      <p>
-        视频简历，历史演出，优秀作品
-      </p>
-      <br />
-      <vue-headline level="3">技艺切磋</vue-headline>
-      <p>
-        附近约会，附近畅聊
-      </p>
-    </home-section>
+    <!--<home-section image="/static/index/findplayer.jpg" alternative>-->
+      <!--<vue-headline level="2">一键找乐手</vue-headline>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">学习支撑</vue-headline>-->
+      <!--<p>-->
+        <!--在线学习,线下切磋-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">所见即所得</vue-headline>-->
+      <!--<p>-->
+        <!--视频简历，历史演出，优秀作品-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">技艺切磋</vue-headline>-->
+      <!--<p>-->
+        <!--附近约会，附近畅聊-->
+      <!--</p>-->
+    <!--</home-section>-->
 
-    <home-section image="/static/index/findplayer.jpg" flip>
-      <vue-headline level="2">一键组乐队</vue-headline>
-      <br />
-      <vue-headline level="3">海量资源</vue-headline>
-      <p>
-        海量乐手,百家手艺
-      </p>
-      <br />
-      <vue-headline level="3">在线组队</vue-headline>
-      <p>
-        在线识人
-      </p>
-      <br />
-      <vue-headline level="3">线下排练</vue-headline>
-      <p>
-        线下资源，排练，设备一应俱全
-      </p>
-    </home-section>
+    <!--<home-section image="/static/index/findplayer.jpg" flip>-->
+      <!--<vue-headline level="2">一键组乐队</vue-headline>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">海量资源</vue-headline>-->
+      <!--<p>-->
+        <!--海量乐手,百家手艺-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">在线组队</vue-headline>-->
+      <!--<p>-->
+        <!--在线识人-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">线下排练</vue-headline>-->
+      <!--<p>-->
+        <!--线下资源，排练，设备一应俱全-->
+      <!--</p>-->
+    <!--</home-section>-->
 
-    <home-section image="/static/index/findplayer.jpg" alternative>
-      <vue-headline level="2">周边服务</vue-headline>
-      <br />
-      <vue-headline level="3">附近资源</vue-headline>
-      <p>
-        琴行 ,舞台建设，周边产品
-      </p>
-      <br />
-      <vue-headline level="3">专业体系</vue-headline>
-      <p>
-        用专业知识解决个人瓶颈
-      </p>
-      <br />
-      <vue-headline level="3">快捷服务</vue-headline>
-      <p>
-        附近资源能信任，快速反应
-      </p>
-    </home-section>
+    <!--<home-section image="/static/index/findplayer.jpg" alternative>-->
+      <!--<vue-headline level="2">周边服务</vue-headline>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">附近资源</vue-headline>-->
+      <!--<p>-->
+        <!--琴行 ,舞台建设，周边产品-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">专业体系</vue-headline>-->
+      <!--<p>-->
+        <!--用专业知识解决个人瓶颈-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">快捷服务</vue-headline>-->
+      <!--<p>-->
+        <!--附近资源能信任，快速反应-->
+      <!--</p>-->
+    <!--</home-section>-->
 
-    <home-section image="/static/index/findplayer.jpg" flip>
-      <vue-headline level="2">一键他乡宿</vue-headline>
-      <br />
-      <vue-headline level="3">他乡遇知己</vue-headline>
-      <p>
-        遥夜他乡宿，同君梁甫吟
-      </p>
-      <br />
-      <vue-headline level="3">他乡家温暖</vue-headline>
-      <p>
-        视频简历，历史演出，优秀作品
-      </p>
-      <br />
-      <vue-headline level="3">利用资源服务他人</vue-headline>
-      <p>
-        资源利用,知识切磋
-      </p>
-    </home-section>
+    <!--<home-section image="/static/index/findplayer.jpg" flip>-->
+      <!--<vue-headline level="2">一键他乡宿</vue-headline>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">他乡遇知己</vue-headline>-->
+      <!--<p>-->
+        <!--遥夜他乡宿，同君梁甫吟-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">他乡家温暖</vue-headline>-->
+      <!--<p>-->
+        <!--视频简历，历史演出，优秀作品-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">利用资源服务他人</vue-headline>-->
+      <!--<p>-->
+        <!--资源利用,知识切磋-->
+      <!--</p>-->
+    <!--</home-section>-->
 
-    <home-section image="/static/index/findplayer.jpg" alternative>
-      <vue-headline level="2">区块链商城</vue-headline>
-      <br />
-      <vue-headline level="3">分布式记账</vue-headline>
-      <p>
-        直链区块链
-      </p>
-      <br />
-      <vue-headline level="3">永久债务</vue-headline>
-      <p>
-        一日记账，千年审计
-      </p>
-      <br />
-      <vue-headline level="3">性能无瓶颈</vue-headline>
-      <p>
-        分布式系统，高可靠性
-      </p>
-    </home-section>
+    <!--<home-section image="/static/index/findplayer.jpg" alternative>-->
+      <!--<vue-headline level="2">区块链商城</vue-headline>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">分布式记账</vue-headline>-->
+      <!--<p>-->
+        <!--直链区块链-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">永久债务</vue-headline>-->
+      <!--<p>-->
+        <!--一日记账，千年审计-->
+      <!--</p>-->
+      <!--<br />-->
+      <!--<vue-headline level="3">性能无瓶颈</vue-headline>-->
+      <!--<p>-->
+        <!--分布式系统，高可靠性-->
+      <!--</p>-->
+    <!--</home-section>-->
   </div>
 </template>
 
@@ -194,14 +195,15 @@ export default {
   },
 };
 </script>
-<style lang="scss" module>
-.player-container {
-  min-height: 100vh;
-  height: 400vh;
-  width: 100%;
-  position: absolute;
-  background-color: transparent;
-  left: 0;
-  top: 0;
-}
+<style lang="scss" scoped>
+
+  .player-container {
+  }
+  .inner-content {
+    margin: 0 auto;
+    max-width: 1400px;
+    min-height: 796px;
+    background: url("../../../static/puddor/1.png") no-repeat center;
+    background-size: contain;
+  }
 </style>

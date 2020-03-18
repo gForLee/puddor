@@ -2,27 +2,9 @@
   <div id="app" :class="$style.app">
     <vue-notification-stack />
 
-    <vue-navigation-progress :is-navigating="isNavigating" />
-    <vue-nav-bar>
-      <vue-button slot="right"  color="primary" @click="toHome">
-        首页
-      </vue-button>
-      <vue-button slot="right"  color="primary" @click="toForum">
-        社区
-      </vue-button>
-      <vue-button slot="right"   color="primary" @click="toEmall">
-        娱乐购
-      </vue-button>
-      <vue-button slot="right"  color="primary"  @click="toDownLoad">
-        文档
-      </vue-button>
-      <vue-button slot="right" v-if="isAuthenticated === false" color="primary" @click="showLoginModal = true">
-        登录
-      </vue-button>
-      <vue-button slot="right" v-if="isAuthenticated" color="primary" @click="onLogout">
-        退出
-      </vue-button>
-    </vue-nav-bar>
+    <!--<vue-navigation-progress :is-navigating="isNavigating" />-->
+    <!--顶部导航-->
+    <puddor-nav-bar/>
     <router-view :class="$style.content" />
     <vue-footer />
     <vue-cookie-consent
@@ -34,7 +16,7 @@
       consent.
     </vue-cookie-consent>
 
-    <vue-sidebar>
+    <vue-sidebar v-show="false">
       <vue-sidebar-group title="导航">
         <vue-sidebar-group-item to="/">
           <vue-icon-code />
@@ -112,6 +94,7 @@ import { mapActions, mapGetters } from 'vuex';
 import { loadLocaleAsync } from '@shared/plugins/i18n/i18n';
 import '@shared/designSystem/global.scss';
 import VueNavBar from '@components/VueNavBar/VueNavBar.vue';
+import PuddorNavBar from './componentsPuddor/puddorNavBar';
 import VueGrid from '@components/VueGrid/VueGrid.vue';
 import VueGridItem from '@components/VueGridItem/VueGridItem.vue';
 import VueFooter from '@components/VueFooter/VueFooter.vue';
@@ -151,7 +134,7 @@ export default {
     VueSidebar,
     VueNavigationProgress,
     VueCookieConsent,
-    VueNavBar,
+    PuddorNavBar,
     VueGrid,
     VueGridItem,
     VueFooter,
