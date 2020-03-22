@@ -2,11 +2,12 @@
   <div id="app" :class="$style.app">
     <vue-notification-stack />
 
-    <!--<vue-navigation-progress :is-navigating="isNavigating" />-->
+    <vue-navigation-progress :is-navigating="isNavigating" />
     <!--顶部导航-->
-    <puddor-nav-bar/>
+    <puddor-nav-bar />
+    <!--<vue-nav-bar/>-->
     <router-view :class="$style.content" />
-    <vue-footer />
+    <!--<vue-footer />-->
     <vue-cookie-consent
       current-version="1.0.0"
       :cookie-consent-version="cookieConsentVersion"
@@ -30,7 +31,7 @@
           <VueIconHashtag />
           一键接商演
         </vue-sidebar-group-item>
-        <vue-sidebar-group-item  to="/example/counter">
+        <vue-sidebar-group-item to="/example/counter">
           <VueIconBook />
           帮助中心
         </vue-sidebar-group-item>
@@ -41,22 +42,20 @@
       </vue-sidebar-group>
 
       <vue-sidebar-group title="Community">
-        <vue-sidebar-group-item  :to="{ name: 'dashboard' }">
+        <vue-sidebar-group-item :to="{ name: 'dashboard' }">
           <vue-icon-hashtag />
           DashBoard
         </vue-sidebar-group-item>
 
-      <vue-sidebar-group-item :to="{ name: 'counter' }">
-        <vue-icon-hashtag />
-        VueX Example
-      </vue-sidebar-group-item>
+        <vue-sidebar-group-item :to="{ name: 'counter' }">
+          <vue-icon-hashtag />
+          VueX Example
+        </vue-sidebar-group-item>
 
-
-
-      <vue-sidebar-group-item :to="{ name: 'form' }">
-        <vue-icon-hashtag />
-        Form Example
-      </vue-sidebar-group-item>
+        <vue-sidebar-group-item :to="{ name: 'form' }">
+          <vue-icon-hashtag />
+          Form Example
+        </vue-sidebar-group-item>
       </vue-sidebar-group>
 
       <vue-sidebar-group title="Documentation">
@@ -119,6 +118,7 @@ import { addNotification } from '@components/VueNotificationStack/utils';
 export default {
   name: 'App',
   components: {
+    VueNavBar,
     LoginForm,
     VueModal,
     VueButton,
@@ -161,16 +161,16 @@ export default {
       this.changeLocale(locale);
     },
     toHome() {
-          this.$router.push('/')
+      this.$router.push('/');
     },
     toForum() {
-          this.$router.push('/forum/home')
+      this.$router.push('/forum/home');
     },
     toEmall() {
-          this.$router.push('/emall/home')
+      this.$router.push('/emall/home');
     },
     toDownLoad() {
-          this.$router.push('/document/home')
+      this.$router.push('/document/home');
     },
     initProgressBar() {
       this.$router.beforeEach((to: any, from: any, next: any) => {
@@ -221,6 +221,10 @@ export default {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  -webkit-font-smoothing: antialiased; /*chrome、safari*/
+  -moz-osx-font-smoothing: grayscale; /*firefox*/
+  font-family: '仿宋';
+  vertical-align: bottom;
 }
 
 .content {

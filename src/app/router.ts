@@ -16,7 +16,16 @@ Vue.use(Meta);
 export const router: VueRouter = new VueRouter({
   mode: 'history',
   base: __dirname,
-  routes: [...AppRoutes, ...HomeRoutes, ...CounterRoutes, ...FormRoutes, ...DashboardRoutes,...ForumRoutes,...EmallRoutes,...DocumentRoutes],
+  routes: [
+    ...AppRoutes,
+    ...HomeRoutes,
+    ...CounterRoutes,
+    ...FormRoutes,
+    ...DashboardRoutes,
+    ...ForumRoutes,
+    ...EmallRoutes,
+    ...DocumentRoutes,
+  ],
   scrollBehavior(to: Route, from: Route, savedPosition: { x: number; y: number }) {
     if (to.hash) {
       return { selector: to.hash };

@@ -36,7 +36,7 @@ export default {
         } /* istanbul ignore next */ else if (this.percent <= 95) {
           this.percent += getIntInRange(1, 2);
         } else {
-          this.percent = 99;
+          this.percent = 100;
         }
       }, 100);
     },

@@ -34,8 +34,8 @@ class Circle {
     );
 
     this.context.closePath();
-    const colorR:number =  getIntInRange(50, 214);
-    const colorG:number =  getIntInRange(80, 100);
+    const colorR: number = getIntInRange(50, 214);
+    const colorG: number = getIntInRange(80, 100);
     this.context.fillStyle = 'rgba(' + colorR + ',' + colorG + ',214,' + this.opacity + ')';
     this.context.fill();
 
