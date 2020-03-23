@@ -52,15 +52,105 @@
       </div>
     </div>
     <!--第四页-->
-    <div class="inner-content-item4"></div>
+    <div class="inner-content-item4">
+      <div class="inner-container-wraper">
+        <img src="../../../static/puddor/4.1.png" alt="">
+        <div class="one-key-findTeam">
+          <div class="one-key-find-head">
+            <span class="one-key-find-head-content">一键组乐队</span>
+          </div>
+          <div class="one-key-find-item">
+            <span>海量资源</span>
+            <span>海量乐手、百家手艺</span>
+          </div>
+          <div class="one-key-find-item">
+            <span>在线组队</span>
+            <span>在线识人</span>
+          </div>
+          <div class="one-key-find-item">
+            <span>线下排练</span>
+            <span>线下资源、排练、设备一应俱全</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--第五页-->
-    <div class="inner-content-item5"></div>
+    <div class="inner-content-item5">
+      <div class="inner-content-item5-inner-content">
+        <div class="round-service-wraper">
+          <span class="round-service-wraper-header">周边服务</span>
+        </div>
+        <div class="round-service-item">
+          <span class="round-service-item-one">附近资源</span>
+          <span class="round-service-item-two">琴行、舞台建设、周边产品</span>
+        </div>
+        <div class="round-service-item">
+          <span class="round-service-item-one">专业体系</span>
+          <span class="round-service-item-two">用专业知识解决个人瓶颈</span>
+        </div>
+        <div class="round-service-item">
+          <span class="round-service-item-one">快捷服务</span>
+          <span class="round-service-item-two">附近资源能信任、快速反应</span>
+        </div>
+      </div>
+    </div>
     <!--第六页-->
-    <div class="inner-content-item6"></div>
+    <div class="inner-content-item6">
+      <div class="inner-content-item6-inner-content">
+        <div class="round-service-wraper">
+          <span class="round-service-wraper-header">一键他乡宿</span>
+        </div>
+        <div class="round-service-item">
+          <span class="round-service-item-one">他乡遇知己</span>
+          <span class="round-service-item-two">视频简历，历史演出，优秀作品</span>
+        </div>
+        <div class="round-service-item">
+          <span class="round-service-item-one">利用资源服务他人</span>
+          <span class="round-service-item-two">资源利用，知识切蹉</span>
+        </div>
+        <div class="round-service-item">
+          <span class="round-service-item-one">快捷服务</span>
+          <span class="round-service-item-two">附近资源能信任、快速反应</span>
+        </div>
+      </div>
+    </div>
     <!--第七页-->
-    <div class="inner-content-item7"></div>
+    <div class="inner-content-item7">
+      <div class="inner-content-item7-head">
+        <span class="area-block-shop">区块链商城</span>
+      </div>
+      <div class="area-block-shop-item-wraper">
+        <div class="area-block-shop-item">
+            <span class="area-block-shop-item-top">分布式记账</span>
+            <span class="area-block-shop-item-bottom">直链区块链</span>
+        </div>
+        <div class="area-block-shop-item">
+            <span class="area-block-shop-item-top">永久债务</span>
+            <span class="area-block-shop-item-bottom">一日记账，千年审计</span>
+        </div>
+        <div class="area-block-shop-item">
+            <span class="area-block-shop-item-top">性能无瓶颈</span>
+            <span class="area-block-shop-item-bottom">分布式系统</span>
+        </div>
+      </div>
+    </div>
     <!--末页-->
-    <div class="inner-content-item8"></div>
+    <div class="inner-content-item8">
+      <div class="bootom-logo">
+        <img class="bootom-logo-img" src="../../../static/logo.png" alt="">
+        <span class="bootom-logo-messge">蒲灯儿</span>
+      </div>
+      <div class="about-us">
+          <div class="content-left">
+            <span class="content-left-about-us">关于我们</span>
+            <span class="copy-right">Copyright © 2019 by 成都普登尔科技有限公司</span>
+          </div>
+          <div class="content-right">
+            <span>&nbsp;</span>
+            <span class="content-right-address">备案编号 成都市大源西韩国城（四川大学旁）</span>
+          </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -149,7 +239,7 @@ export default {
   max-width: 1400px;
   min-height: 796px;
   background: url('../../../static/puddor/1.png') no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .inner-content-item8 {
@@ -157,7 +247,7 @@ export default {
   max-width: 1400px;
   min-height: 408px;
   background: url('../../../static/puddor/8.png') no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .inner-content-item7 {
@@ -165,7 +255,8 @@ export default {
   max-width: 1400px;
   min-height: 587px;
   background: url('../../../static/puddor/7.png') no-repeat center;
-  background-size: contain;
+  background-size: cover;
+  padding-top: 139px;
 }
 
 .inner-content-item6 {
@@ -173,7 +264,10 @@ export default {
   max-width: 1400px;
   min-height: 805px;
   background: url('../../../static/puddor/6.png') no-repeat center;
-  background-size: contain;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .inner-content-item5 {
@@ -181,10 +275,15 @@ export default {
   max-width: 1400px;
   min-height: 935px;
   background: url('../../../static/puddor/5.png') no-repeat center;
-  background-size: contain;
+  background-size: cover;
+  display: flex;
+  align-items: center;
 }
 
 .inner-content-item4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   max-width: 1400px;
   min-height: 850px;
@@ -210,7 +309,7 @@ export default {
   max-width: 1400px;
   min-height: 850px;
   background: url('../../../static/puddor/3.png') no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .inner-content-item2 {
@@ -231,7 +330,7 @@ export default {
   width: 255px;
   height: 255px;
   background: url('../../../static/puddor/Group11.png') no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .content-left-img2 {
@@ -346,4 +445,171 @@ export default {
   line-height: 28px;
   margin-bottom: 20px;
 }
+  .inner-container-wraper > img{
+    width: 1023px;
+    height: 695px;
+  }
+  .inner-container-wraper {
+    position: relative;
+  }
+  .one-key-findTeam {
+    position: absolute;
+    width: 516px;
+    height: 530px;
+    background:rgba(98,38,208,1);
+    box-shadow:-7px 9px 14px 1px rgba(0,0,0,0.4);
+    opacity:0.8;
+    top: 32%;
+    left: 51%;
+  }
+  .one-key-find-head {
+    padding: 55px 105px 38px 0;
+    text-align: right;
+  }
+  .one-key-find-head-content {
+    font-size:48px;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:67px;
+  }
+  .one-key-find-item >span:nth-child(1){
+    font-size:30px;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:28px;
+    margin-bottom: 20px;
+  }
+  .one-key-find-item >span:nth-child(2){
+    font-size:18px;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:28px;
+  }
+  .one-key-find-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 126px;
+    margin-bottom: 32px;
+  }
+  .inner-content-item5-inner-content {
+    width:574px;
+    height:530px;
+    background:rgba(2,57,129,1);
+    box-shadow:-7px 9px 14px 1px rgba(0,0,0,0.4);
+    opacity:0.8;
+    margin-left: 152px;
+  }
+  .round-service-wraper {
+    text-align: right;
+    padding: 64px 163px 38px;
+  }
+  .round-service-wraper-header {
+    font-size:48px;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:67px;
+  }
+  .round-service-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 126px;
+    margin-bottom: 32px;
+  }
+  .round-service-item-one {
+    font-size:30px;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:28px;
+    margin-bottom: 20px;
+  }
+  .round-service-item-two {
+    font-size:18px;
+    color:rgba(255,255,255,1);
+    line-height:28px;
+  }
+  .inner-content-item6-inner-content {
+    width:574px;
+    height:530px;
+    background:rgba(70,136,207,1);
+    box-shadow:-7px 9px 14px 1px rgba(0,0,0,0.4);
+    opacity:0.8;
+    margin-right: 204px;
+  }
+  .inner-content-item7-head {
+    padding-left: 243px;
+    margin-bottom: 48px;
+  }
+  .area-block-shop {
+    font-size:48px;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:67px;
+  }
+  .area-block-shop-item-wraper {
+    margin-left: 254px;
+    display: flex;
+    align-items: center;
+  }
+  .area-block-shop-item-bottom {
+    font-size:18px;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:28px;
+  }
+  .area-block-shop-item-top {
+    font-size:30px;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:28px;
+    margin-bottom: 20px;
+  }
+  .area-block-shop-item {
+    margin-right: 71px;
+    display: flex;
+    flex-direction: column;
+  }
+  .bootom-logo {
+    padding: 90px 0 51px 219px;
+    display: flex;
+    align-items: center;
+  }
+  .bootom-logo-messge {
+    font-size:29px;
+    color:rgba(255,255,255,1);
+    line-height:14px;
+  }
+  .bootom-logo-img {
+    width:35px;
+    height:50px;
+    margin-right: 24px;
+  }
+  .about-us {
+    padding: 0 204px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-left-about-us {
+    font-size:16px;
+    color:rgba(255,255,255,1);
+    line-height:23px
+  }
+  .copy-right {
+    font-size:16px;
+    color:rgba(255,255,255,1);
+    line-height:22px;
+  }
+  .content-right-address {
+    font-size:16px;
+    color:rgba(255,255,255,1);
+    line-height:22px;
+  }
 </style>
