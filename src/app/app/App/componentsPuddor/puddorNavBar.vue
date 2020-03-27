@@ -6,7 +6,19 @@
                     <vue-sidebar style="background-color: white">
                         <vue-sidebar-group title="导航">
                             <vue-sidebar-group-item to="/">
-                                一键找乐手
+                                首页
+                            </vue-sidebar-group-item>
+                            <vue-sidebar-group-item to="/">
+                                社区
+                            </vue-sidebar-group-item>
+                            <vue-sidebar-group-item to="/">
+                                娱乐购
+                            </vue-sidebar-group-item>
+                            <vue-sidebar-group-item to="/">
+                                关于我们
+                            </vue-sidebar-group-item>
+                            <vue-sidebar-group-item to="/">
+                                登录
                             </vue-sidebar-group-item>
                         </vue-sidebar-group>
 

@@ -52,28 +52,29 @@
             </div>
         </div>
         <!--第四页-->
-        <!--<div class="inner-content-item4">-->
-            <!--<div class="inner-container-wraper">-->
-                <!--<img src="../../../static/puddor/4.1.png" alt="">-->
-                <!--<div class="one-key-findTeam">-->
-                    <!--<div class="one-key-find-head">-->
-                        <!--<span class="one-key-find-head-content">一键组乐队</span>-->
-                    <!--</div>-->
-                    <!--<div class="one-key-find-item">-->
-                        <!--<span>海量资源</span>-->
-                        <!--<span>海量乐手、百家手艺</span>-->
-                    <!--</div>-->
-                    <!--<div class="one-key-find-item">-->
-                        <!--<span>在线组队</span>-->
-                        <!--<span>在线识人</span>-->
-                    <!--</div>-->
-                    <!--<div class="one-key-find-item">-->
-                        <!--<span>线下排练</span>-->
-                        <!--<span>线下资源、排练、设备一应俱全</span>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="inner-content-item4">
+            <div class="inner-container-wraper">
+                <div class="inner-container-img">
+                    <div class="one-key-findTeam">
+                        <div class="one-key-find-head">
+                            <span class="one-key-find-head-content">一键组乐队</span>
+                        </div>
+                        <div class="one-key-find-item">
+                            <span>海量资源</span>
+                            <span>海量乐手、百家手艺</span>
+                        </div>
+                        <div class="one-key-find-item">
+                            <span>在线组队</span>
+                            <span>在线识人</span>
+                        </div>
+                        <div class="one-key-find-item">
+                            <span>线下排练</span>
+                            <span>线下资源、排练、设备一应俱全</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--第五页-->
         <div class="inner-content-item5">
             <div class="inner-content-item5-inner-content">
@@ -458,14 +459,19 @@
             margin-bottom: 20px;
         }
 
-        .inner-container-wraper > img {
+
+        .inner-container-wraper {
             width: 1023px;
             height: 695px;
         }
-
-        .inner-container-wraper {
+        .inner-container-img {
             position: relative;
+            width:969px;
+            height:697px;
+            background: url('../../../static/puddor/4.1.png') no-repeat center;
+            background-size: cover;
         }
+
 
         .one-key-findTeam {
             position: absolute;
@@ -710,8 +716,30 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto;
+            max-width: 1400px;
             min-height: 850px;
             background: linear-gradient(180deg, rgba(14, 5, 19, 1) 0%, rgba(0, 56, 144, 1) 100%);
+        }
+        .inner-container-wraper {
+            width: 1023px;
+            height: 695px;
+        }
+        .inner-container-img {
+            position: relative;
+            width:969px;
+            height:697px;
+            background: url('../../../static/puddor/4.1.png') no-repeat center;
+            background-size: cover;
+        }
+        .one-key-findTeam {
+            position: absolute;
+            width: 516px;
+            height: 530px;
+            background: rgba(98, 38, 208, 1);
+            box-shadow: -7px 9px 14px 1px rgba(0, 0, 0, 0.4);
+            opacity: 0.8;
+            top: 32%;
+            left: 51%;
         }
 
         .inner-content-item3-content {
@@ -836,7 +864,7 @@
         .content-bottom-item {
             display: flex;
             flex-direction: column;
-            padding: 2px 0 2px 2px;
+            padding: 20px 0 20px 55px;
             background-color: #701646;
             margin-bottom: 20px;
         }
@@ -878,7 +906,6 @@
         }
 
         .inner-container-wraper {
-            position: relative;
         }
 
         .one-key-findTeam {
@@ -1073,10 +1100,7 @@
 
     /*窗口 768 ~ 960*/
     @media screen and (max-width: 960px) {
-        .player-container {
-
-
-        }
+        .player-container {}
 
         .inner-content {
             margin: 0 auto;
@@ -1119,15 +1143,36 @@
             align-items: center;
             justify-content: center;
         }
-
         .inner-content-item4 {
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto;
-            min-height: 350px;
+            max-width: 100%;
+            min-height: 550px;
             background: linear-gradient(180deg, rgba(14, 5, 19, 1) 0%, rgba(0, 56, 144, 1) 100%);
         }
+        .inner-container-wraper {
+            width:100%;
+            height:100%;
+        }
+        .inner-container-img {
+            position: relative;
+            width:100%;
+            height:100%;
+            background: url('../../../static/puddor/4.1.png') no-repeat center;
+            background-size: cover;
+        }
+        .one-key-findTeam {
+            width: 100%;
+            height: 530px;
+            background: rgba(98, 38, 208, 1);
+            box-shadow: -7px 9px 14px 1px rgba(0, 0, 0, 0.4);
+            opacity: 0.8;
+            top: -265px;
+            left: 0%;
+        }
+
 
         .inner-content-item3-content {
             display: flex;
@@ -1290,28 +1335,12 @@
             margin-bottom: 20px;
         }
 
-        .inner-container-wraper > img {
-            width: 1023px;
-            height: 695px;
-        }
-
         .inner-container-wraper {
             position: relative;
         }
 
-        .one-key-findTeam {
-            position: absolute;
-            width: 516px;
-            height: 530px;
-            background: rgba(98, 38, 208, 1);
-            box-shadow: -7px 9px 14px 1px rgba(0, 0, 0, 0.4);
-            opacity: 0.8;
-            top: 32%;
-            left: 51%;
-        }
-
         .one-key-find-head {
-            padding: 55px 105px 38px 0;
+            padding: 55px 67px 38px 0;
             text-align: right;
         }
 
@@ -1340,7 +1369,7 @@
         .one-key-find-item {
             display: flex;
             flex-direction: column;
-            padding-left: 126px;
+            padding-left: 22px;
             margin-bottom: 32px;
         }
 
@@ -1488,6 +1517,6 @@
             color: rgba(255, 255, 255, 1);
             line-height: 22px;
         }
-
     }
+
 </style>
