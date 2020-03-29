@@ -58,7 +58,7 @@
       </p>
     </home-section>
 
-    <home-section image="/static/index/findplayer.jpg" alternative>
+      <home-section image="/static/index/findplayer.jpg" alternative>
       <vue-headline level="2">周边服务</vue-headline>
       <br />
       <vue-headline level="3">附近资源</vue-headline>
